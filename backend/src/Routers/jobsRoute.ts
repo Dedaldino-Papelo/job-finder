@@ -1,8 +1,7 @@
 import express from 'express'
-import { store, index } from '../controllers/categoryController'
+import { store } from '../controllers/jobsController'
 const router = express.Router()
 
 router.post("/", store)
-router.get("/", index)
 
 export default router

@@ -14,7 +14,7 @@ const jobSchema = new Schema<IJobs>({
     role: { type: String, required: true },
     description: { type: String, required: true },
     company: { type: String, required: true },
-    jobType: { type: String, required: true },
+    jobType: { type: String },
     jobLocation: { type: String, required: true },
     expirationDate: { type: Date },
     category: { type: Schema.Types.ObjectId, ref: 'Category' }

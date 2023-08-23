@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import category from './Routers/categoryRoute'
+import job from './Routers/jobsRoute'
 
 const app = express()
 
@@ -12,6 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.use("/category", category)
+app.use("/jobs", job)
 
 
 app.listen(process.env.PORT, () => {
