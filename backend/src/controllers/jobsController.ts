@@ -27,3 +27,17 @@ export const index = async (req: Request, res: Response) => {
         res.status(400).send("Server error" + error)
     }
 }
+
+export const show = async (req: Request, res: Response) => {
+    const { id } = req.params
+    try {
+        const job = await Jobs.findById(id)
+        if(job) {
+            return res.status(200).json(job)
+        }
+        return res.status(400).json("this job does not exist" )
+        
+    } catch (error) {
+        res.status(400).send("Server error" + error)
+    }
+}

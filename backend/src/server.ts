@@ -1,6 +1,8 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose';
+import cors from 'cors'
+
 import category from './Routers/categoryRoute'
 import job from './Routers/jobsRoute'
 
@@ -8,6 +10,7 @@ const app = express()
 
 mongoose.connect('mongodb://127.0.0.1:27017/job-finder');
 
+app.use(cors())
 dotenv.config()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
