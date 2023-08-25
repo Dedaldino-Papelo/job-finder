@@ -1,3 +1,6 @@
 <section>
     <h2>Vagas Mais Recentes</h2>
+    <div *ngFor="let job of jobs">
+        <h2>{{ job.role }}</h2>
+    </div>
 </section>

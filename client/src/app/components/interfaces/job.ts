@@ -1,9 +1,10 @@
 export interface Job {
-    id?: string,
+    _id?: string,
     role: string,
     description: string,
     company: string,
-    jobType: string,
+    companyImage: string,
+    jobType?: string,
     jobLocation: string,
     expirationDate: Date
     category: string,

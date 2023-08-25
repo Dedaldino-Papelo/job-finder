@@ -3,6 +3,7 @@ import { environment } from 'src/environments/environment';
 
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs'
+import { Job } from '../../interfaces/job';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class JobService {
 
   constructor( private http: HttpClient ) { }
 
-  getJobs(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl)
+  getJobs(): Observable<Job[]> {
+    return this.http.get<Job[]>(this.apiUrl)
   }
 }

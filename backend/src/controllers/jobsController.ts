@@ -41,3 +41,15 @@ export const show = async (req: Request, res: Response) => {
         res.status(400).send("Server error" + error)
     }
 }
+
+export const update = async (req: Request, res: Response) => {
+    const { id } = req.params
+    try {
+        const udpdateJob = await Jobs.findByIdAndUpdate(id, req.body, {
+            new: true
+        })
+        return res.status(200).json(udpdateJob)
+    } catch (error) {
+        res.status(400).send("Server error" + error)
+    }
+}   
