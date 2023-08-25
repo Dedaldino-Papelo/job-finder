@@ -1,0 +1,39 @@
+.jobs {
+    margin-top: 12em;
+    background-color: #e5e8f8;
+}
+
+.jobs > div {
+    padding-bottom: 8em;
+}
+.jobs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(210px,1fr));
+    grid-gap: 20px;
+}
+
+.section-title {
+   font-size: 31;
+   padding: 60px 0 60px 0
+}
+
+.job-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.job-card .header {
+    display: flex;
+    align-items: center;
+}
+
+.job-card .role {
+    font-size: 18px;
+}
+
+.job-card img {
+    width: 90px;
+}

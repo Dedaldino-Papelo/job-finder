@@ -1,6 +1,21 @@
-<section>
-    <h2>Vagas Mais Recentes</h2>
-    <div *ngFor="let job of jobs">
-        <h2>{{ job.role }}</h2>
+<section class="jobs">
+    
+    <div class="container">
+        <h2 class="section-title">Vagas Mais Recentes</h2>
+        <div class="jobs-container">
+            <div class="job-card" *ngFor="let job of jobs">
+                <div class="header">
+                    <img src="{{ job.companyImage }}">
+                    <h3 class="company-name">{{ job.company }}</h3>
+                </div>
+                <span class="data">postado em {{ job.createdAt }}</span>
+                <div class="job-body">
+                    <h2 class="role">{{ job.role }}</h2>
+                    <p>{{ job.jobLocation }}</p>
+                    <p>{{ job.category.name}}</p>
+                </div>
+            </div>
+        </div>
     </div>
+
 </section>

@@ -21,7 +21,7 @@ export const store = async (req: Request, res: Response) => {
 
 export const index = async (req: Request, res: Response) => {
     try {
-        const jobs = await Jobs.find()
+        const jobs = await Jobs.find().populate("category").exec()
         return res.status(200).json(jobs)
     } catch (error) {
         res.status(400).send("Server error" + error)

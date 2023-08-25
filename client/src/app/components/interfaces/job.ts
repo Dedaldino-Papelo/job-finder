@@ -1,3 +1,5 @@
+import { category } from "./category"
+
 export interface Job {
     _id?: string,
     role: string,
@@ -7,7 +9,7 @@ export interface Job {
     jobType?: string,
     jobLocation: string,
     expirationDate: Date
-    category: string,
+    category: category,
     createdAt?: string,
     updatedAt?: string
 }
