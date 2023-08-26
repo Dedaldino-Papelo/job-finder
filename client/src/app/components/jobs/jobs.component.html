@@ -5,14 +5,19 @@
         <div class="jobs-container">
             <div class="job-card" *ngFor="let job of jobs">
                 <div class="header">
-                    <img src="{{ job.companyImage }}">
+                    <div class="img-wrapper"><img src="{{ job.companyImage }}"></div>
                     <h3 class="company-name">{{ job.company }}</h3>
                 </div>
-                <span class="data">postado em {{ job.createdAt }}</span>
+                <span class="datetime">postado em {{ job.createdAt }}</span>
                 <div class="job-body">
                     <h2 class="role">{{ job.role }}</h2>
-                    <p>{{ job.jobLocation }}</p>
-                    <p>{{ job.category.name}}</p>
+                    <p class="location">{{ job.jobLocation }}</p>
+                </div>
+                <div class="footer">
+                    <p class="category">{{ job.category.name}}</p>
+                    <div class="btn-wrapper">
+                        <button class="btn-ver-vaga">Ver Vaga</button>
+                    </div>
                 </div>
             </div>
         </div>
