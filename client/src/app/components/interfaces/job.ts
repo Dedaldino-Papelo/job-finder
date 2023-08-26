@@ -8,7 +8,7 @@ export interface Job {
     companyImage: string,
     jobType?: string,
     jobLocation: string,
-    expirationDate: Date
+    expirationDate: string
     category: category,
     createdAt?: string,
     updatedAt?: string

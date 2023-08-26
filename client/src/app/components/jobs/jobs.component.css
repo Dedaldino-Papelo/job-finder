@@ -51,8 +51,9 @@
 
 .datetime {
     color: #B2B2B2;
-    font-family: 12.495px;
+    font-size: 12.495px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .job-card .role {

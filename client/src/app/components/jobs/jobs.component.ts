@@ -13,9 +13,23 @@ export class JobsComponent implements OnInit {
   constructor(private jobService: JobService){}
 
   ngOnInit(): void {
+    this.fetch()
+  }
+
+  fetch() {
     this.jobService.getJobs().subscribe(data => {
-      this.jobs = data
-      console.log(this.jobs)
+      const newData = data
+      newData.map(item => {
+        let searchRegExp  = /\//g
+        item.createdAt = new Date(item.createdAt!)
+        .toLocaleDateString('pt-BR')
+        .replace(searchRegExp, '-')
+        
+        item.expirationDate = new Date(item.expirationDate!)
+        .toLocaleDateString('pt-BR')
+        .replace(searchRegExp, '-')
+      })
+      this.jobs = newData
     }, (error) => {
       console.error('Error fetching data:', error);
     })
