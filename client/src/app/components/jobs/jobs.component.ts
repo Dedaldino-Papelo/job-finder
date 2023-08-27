@@ -20,16 +20,14 @@ export class JobsComponent implements OnInit {
     this.jobService.getJobs().subscribe(data => {
       const newData = data
       newData.map(item => {
-        let searchRegExp  = /\//g
         item.createdAt = new Date(item.createdAt!)
         .toLocaleDateString('pt-BR')
-        .replace(searchRegExp, '-')
         
         item.expirationDate = new Date(item.expirationDate!)
         .toLocaleDateString('pt-BR')
-        .replace(searchRegExp, '-')
       })
       this.jobs = newData
+      
     }, (error) => {
       console.error('Error fetching data:', error);
     })
