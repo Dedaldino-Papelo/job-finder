@@ -110,16 +110,22 @@
     background-color: #fff;
     padding: 30px;
     border-radius: 5px;
+    text-align: center;
+}
+
+.job-id {
+    font-size: 15px;
 }
 
 .job-listing ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 3px;
     list-style: none;
     padding: 0;
     margin-top: 5px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .job-listing-btn {

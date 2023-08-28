@@ -1,5 +1,5 @@
 button {
-    border: 1px solid #5049e1;
+    border: none;
     border-radius: 6px;
     background: #5049e1;
     color: #fff;
@@ -11,7 +11,11 @@ button {
     text-transform: initial;
     text-decoration: none;
     cursor: pointer;
-    transition: color 300ms;
-
+    transition: ease-in-out 0.3s;
+    width: 100%;
     margin: 15px 8px;
+}
+
+button:hover {
+    background-color: #433bde;
 }
