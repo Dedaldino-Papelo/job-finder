@@ -1,0 +1,103 @@
+.job {
+    background-color: #F3F2FC;
+    margin-top: 50px;
+}
+
+.job-menu {
+    background-color: #E9E8F7;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-menu span {
+    font-size: 12.495px;
+    color: #9E9E9E;
+}
+
+.job-menu span a {
+    color: #5049E1;
+}
+
+.job-body {
+    display: grid;
+    grid-template-columns: 2fr 200px;
+    grid-gap: 40px;
+    margin-top: 70px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.header-body {
+    display: flex;
+    gap: 15px;
+}
+
+.job-role .role {
+    font-size: 1.384em;
+    margin-bottom: 1rem;
+}
+
+.job-date {
+    font-size: 15px;
+}
+
+.postDate {
+    color: #606060;
+}
+
+.job-description {
+    margin-top: 70px;
+}
+
+.medium-title {
+    text-align: center;
+    font-size: 18.666px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.job-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.application-process {
+    margin-top: 60px;
+}
+
+.application-process h2 {
+    font-size: 18.666px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.application-process p {
+    line-height: 1.72em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-wrapper {
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.image-wrapper img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    padding: 10px;
+}

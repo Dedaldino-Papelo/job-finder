@@ -20,6 +20,7 @@ export class JobDetailsComponent implements OnInit {
     const id = this.route.snapshot.paramMap.get("id")
     this.jobService.getJob(id!).subscribe(data => {
       data.expirationDate = new Date(data.expirationDate!).toLocaleDateString('pt-BR')
+      data.createdAt = new Date(data.createdAt!).toLocaleDateString('pt-BR')
       this.job = data
     })    
   }

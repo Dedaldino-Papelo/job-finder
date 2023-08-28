@@ -1,1 +1,46 @@
-<p>job-details works!</p>
+<section class="job" *ngIf="job">
+  <div class="job-menu">
+    <div class="teste container">
+        <span><a routerLink="/">Home</a></span>
+        <span> &nbsp; &nbsp; / &nbsp; {{ job.role }}</span>
+    </div>
+  </div>
+
+  <div class="container job-body">
+    <div class="job-info-content">
+      <div class="header-body">
+        <div class="image-wrapper">
+          <img src="{{ job.companyImage }}" />
+        </div>
+        <div class="job-role">
+          <h1 class="role">{{ job.role }}</h1>
+          <p class="job-date">
+            Plugtech
+            <span class="postDate">Postado em {{ job.createdAt }}</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="job-description">
+        <h2 class="medium-title">Recrutamento</h2>
+        <h3 class="job-title">{{ job.role }}</h3>
+        <p>
+          {{ job.description }}
+        </p>
+      </div>
+
+      <div class="application-process">
+        <h2 class="">PROCESSO DE CANDIDATURA</h2>
+        <p>
+          Se você tem interesse nesta oportunidade de emprego, não hesite, envie
+          a sua candidatura para o endereço eletrônico indicado abaixo em
+          “Aplicar Agora“.
+        </p>
+      </div>
+    </div>
+
+    <div class="job-right-side">
+      <h2>Just to</h2>
+    </div>
+  </div>
+</section>
