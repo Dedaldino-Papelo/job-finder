@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { JobDetailsComponent } from './components/pages/job-details/job-details.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { JobDetailsComponent } from './components/pages/job-details/job-details.
     HeaderComponent,
     HomeComponent,
     JobsComponent,
-    JobDetailsComponent
+    JobDetailsComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

@@ -22,11 +22,15 @@
 
 .job-body {
     display: grid;
-    grid-template-columns: 2fr 200px;
-    grid-gap: 40px;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 25px;
     margin-top: 70px;
+}
+
+.job-info-content {
     background-color: #fff;
-    padding: 30px;
+    padding: 40px;
+    border-radius: 5px;
 }
 
 .header-body {
@@ -81,15 +85,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 .image-wrapper {
     border-radius: 5px;
     background-color: #f8f8f8;
@@ -100,4 +95,44 @@
     height: 80px;
     object-fit: cover;
     padding: 10px;
+}
+
+
+
+
+/*Right side*/
+.job-right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-listing {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.job-listing ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.job-listing-btn {
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 5px 0;
+    color: currentColor;
+    line-height: 1.25em;
+}
+
+.job-expiry {
+    font-size: 12.495px;
+    color: #262626;
 }

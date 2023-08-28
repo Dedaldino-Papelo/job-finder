@@ -1,0 +1,17 @@
+button {
+    border: 1px solid #5049e1;
+    border-radius: 6px;
+    background: #5049e1;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.25em;
+    font-weight: 500;
+    letter-spacing: 0;
+    padding: 12px 20px;
+    text-transform: initial;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 300ms;
+
+    margin: 15px 8px;
+}
