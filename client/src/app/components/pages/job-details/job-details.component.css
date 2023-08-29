@@ -128,6 +128,11 @@
     cursor: pointer;
 }
 
+.custom-icon {
+    color: #838383;
+    margin-right: 5px;
+}
+
 .job-listing-btn {
     border: 1px solid #c5c5c5;
     border-radius: 5px;
@@ -141,4 +146,51 @@
 .job-expiry {
     font-size: 12.495px;
     color: #262626;
+}
+
+.job-overview {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.job-overview h2 {
+    margin-bottom: 20px;
+}
+
+.job-overview ul li {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.job-icon-wrapper {
+    background: #F3F2FC;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.job-icon {
+    color: #5049e1;
+}
+
+.job-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.job-item :first-child{
+    font-size: 15;
+    color: #000;
+    font-weight: 500;
+}
+
+.job-item :last-child{
+    color: #5F5F5F;
+    font-size: 14px;
 }

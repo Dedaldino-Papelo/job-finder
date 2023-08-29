@@ -26,3 +26,7 @@ a:hover {
 p {
     color: #5f5f5f;
 }
+
+ul li {
+    list-style: none;
+}

@@ -1,6 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { FaIconLibrary, FontAwesomeModule } from "@fortawesome/angular-fontawesome"
+
+import { faPlus, 
+        faEnvelope, 
+        faPrint, 
+        faLocationDot,
+        faBriefcase,
+        faHandshakeSimple,
+        faSackDollar
+} from '@fortawesome/free-solid-svg-icons';
+
 import { HttpClientModule } from '@angular/common/http'
 import {  FormsModule, ReactiveFormsModule } from '@angular/forms' 
 
@@ -26,9 +37,20 @@ import { ButtonComponent } from './components/button/button.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faPlus, 
+                    faEnvelope, 
+                    faPrint, 
+                    faLocationDot,
+                    faBriefcase,
+                    faHandshakeSimple,
+                    faSackDollar )
+  }
+}

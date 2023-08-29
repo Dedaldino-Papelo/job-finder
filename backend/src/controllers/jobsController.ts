@@ -31,7 +31,7 @@ export const index = async (req: Request, res: Response) => {
 export const show = async (req: Request, res: Response) => {
     const { id } = req.params
     try {
-        const job = await Jobs.findById(id)
+        const job = await Jobs.findById(id).populate('category').exec()
         if(job) {
             return res.status(200).json(job)
         }

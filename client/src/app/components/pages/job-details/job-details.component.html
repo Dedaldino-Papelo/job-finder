@@ -39,16 +39,88 @@
       </div>
     </div>
 
-    <div class="job-right-side">
-      <div class="job-listing">
-        <span class="job-id">Vaga ID: 98014</span>
+    <div class = "job-right-side">
+      <div class = "job-listing">
+        <span class = "job-id">Vaga ID: 98014</span>
         <app-button />
-        <ul class="">
-          <li><a class="job-listing-btn">Guardar</a></li>
-          <li><a class="job-listing-btn">Imprimir</a></li>
-          <li><a class="job-listing-btn">Email</a></li>
+        <ul>
+          <li>
+            <a class = "job-listing-btn">
+              <fa-icon icon="plus" class="custom-icon" />
+              Guardar
+            </a>
+         </li>
+
+          <li>
+            <a class = "job-listing-btn">
+              <fa-icon icon="print" class="custom-icon" />
+              Imprimir
+            </a>
+          </li>
+
+          <li>
+            <a class = "job-listing-btn">
+              <fa-icon icon="envelope" class="custom-icon" />
+              Email
+            </a>
+          </li>
+
         </ul>
-        <span class="job-expiry">A aplicação termina em October 7, 2023</span>
+        <span class="job-expiry">A aplicação termina em {{ job.expirationDate }}</span>
+      </div>
+
+      <div class="job-overview">
+        <h2>Visão Geral</h2>
+        <ul>
+          <li>
+            <div class="job-icon-wrapper">
+              <fa-icon icon="location-dot" class="job-icon" size="lg" />
+            </div>
+            <div class="job-item">
+              <span>Location</span>
+              <span>
+                <a href="">Angola</a>
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div class="job-icon-wrapper">
+              <fa-icon icon="briefcase" class="job-icon" size="lg" />
+            </div>
+            <div class="job-item">
+              <span>Categória da Vaga</span>
+              <span>
+                {{ job.category.name }}
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div class="job-icon-wrapper">
+              <fa-icon icon="sack-dollar" class="job-icon" size="lg" />
+            </div>
+            <div class="job-item">
+              <span>Salário</span>
+              <span>
+                $0
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <div class="job-icon-wrapper">
+              <fa-icon icon="handshake-simple" class="job-icon" size="lg" />
+            </div>
+            <div class="job-item">
+              <span>Tipo de Emprego</span>
+              <span>
+                Tempo Inteiro
+              </span>
+            </div>
+          </li>
+        </ul>
+
       </div>
     </div>
     
