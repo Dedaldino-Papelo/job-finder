@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router'
 })
 export class JobDetailsComponent implements OnInit {
   job?: Job
+  btnTxt = "Aplicar Agora"
 
   constructor(
     private jobService: JobService, 
