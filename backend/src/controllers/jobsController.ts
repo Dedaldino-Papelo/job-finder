@@ -52,4 +52,12 @@ export const update = async (req: Request, res: Response) => {
     } catch (error) {
         res.status(400).send("Server error" + error)
     }
-}   
+}
+
+export const remove = async(req: Request, res: Response) => {
+    try {
+        await Jobs.findByIdAndDelete(req.params.id)
+    } catch (error) {
+        res.status(400).send("Server error" + error)
+    }
+}

@@ -42,7 +42,9 @@
     <div class = "job-right-side">
       <div class = "job-listing">
         <span class = "job-id">Vaga ID: 98014</span>
-        <app-button [name] = "btnTxt" />
+        <div>
+          <app-button [name] = "btnTxt" [expirationDate] = "job.expirationDate" />
+        </div>
         <ul>
           <li>
             <a class = "job-listing-btn">
